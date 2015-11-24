@@ -15,7 +15,7 @@ service_password: secretsecret
 admin_password: secretsecret
 
 # The public SSH key that should be used for the system user 'stack'.
-stack_sshkey: the_ssh_public_key_you_want_for_your_stack_user
+# stack_sshkey: the_ssh_public_key_you_want_for_your_stack_user
 
 # Define the setup mode to install the environment.
 # valid values: grenade, devstack
@@ -32,7 +32,7 @@ bridge_int: eth1
 # A non upstream for the base box, used to speed things up. Choose one of
 # box_name (for a locally added box) or box_url for the url of a nearby box.
 #box_name: 'my.favorite'
-#box_url: http://gallifrey/vagrant/devstack-2014-02-19.box
+box_url: https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
 
 # Non upstream Git URL to fetch Devstack from instead.
 #devstack_git: /home/vagrant/openstack/devstack
@@ -46,7 +46,7 @@ bridge_int: eth1
 
 # Uncomment below to setup LDAP on the management node and use it as backend
 # for keystone.
-#use_ldap: true
+use_ldap: true
 
 # You can specify stable MAC addresses to keep this from resetting on every
 # create.
